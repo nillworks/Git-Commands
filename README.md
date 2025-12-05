@@ -41,3 +41,22 @@ git reset --hard          # Last commit এ ফিরে যাওয়া
 git rm filename -f        # Permanently file delete
 rm -rf folderName         # Folder delete
 
+1️⃣ Short commit ID & One-line log
+git log --oneline
+
+শুধু last 5 commit দেখাতে:
+git log --oneline -5
+
+একটি branch specific log দেখতে:
+git log --oneline main
+
+3️⃣ Extra: Graph সহ দেখানো
+git log --oneline --graph --decorate
+
+এতে branch structure এবং commit history সুন্দরভাবে দেখাবে।
+
+💡 Tip:
+যখন git cherry-pick বা git reset করতে হবে, short commit ID ব্যবহার করুন।
+git log --oneline সব সময় fast এবং readable।
+
+
