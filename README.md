@@ -60,3 +60,15 @@ git log --oneline --graph --decorate
 git log --oneline সব সময় fast এবং readable।
 
 
+🎗️main branch-এর সব code/content যেন একদম same ভাবে master branch-এ চলে আসে।
+এই কাজটা করার সবচেয়ে safe এবং সঠিক উপায়
+git checkout master
+git merge main
+git push origin master
+
+এর মানে:
+আগে master এ যাবে
+main এর কোড master এ মিশাবে
+GitHub-এ আপডেট পাঠাবে ✅
+
+
