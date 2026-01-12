@@ -72,3 +72,17 @@ main এর কোড master এ মিশাবে
 GitHub-এ আপডেট পাঠাবে ✅
 
 
+🔁 Option 1: main → master (সবচেয়ে সহজ ও safe)
+1️⃣ আগে master branch-এ যাও
+git checkout master
+
+2️⃣ এখন main branch-এর code master-এ merge করো
+git merge main
+
+
+👉 যদি কোনো conflict না থাকে, তাহলে main-এর সব code এখন master-এ চলে যাবে ✅
+
+3️⃣ এখন remote (GitHub)-এ push করো
+git push origin master
+
+
